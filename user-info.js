@@ -7,6 +7,7 @@ templateUserInfo.innerHTML = `
     }
 
     div {
+      background-color: white;
       border-left: 5px solid coral;
       border-radius: .5rem;
       box-shadow: 2px 2px 5px rgba(0,0,0,.2);
