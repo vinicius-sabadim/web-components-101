@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web Components 101</title>
+    <script src="increment-number.js" defer></script>
+    <script src="user-info.js" defer></script>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        padding: 2rem;
+      }
+
+      h2 {
+        margin-bottom: 0.5rem;
+      }
+
+      h2:not(:first-of-type) {
+        margin-top: 3rem;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Component with slot</h2>
+    <user-info>
+      <span slot="name">Vinicius Sabadim Fernandes</span>
+      <span slot="email">vinicius.sabadim@gmail.com</span>
+    </user-info>
+
+    <h2>Component with lifecycle and events</h2>
+    <increment-number></increment-number>
+  </body>
+</html>
